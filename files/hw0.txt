@@ -1,0 +1,3 @@
+./hw0/README.md
+./hw0/gittask0/README.md
+./hw0/gittask0/SOLUTION.md
