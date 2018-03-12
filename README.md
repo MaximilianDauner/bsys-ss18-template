@@ -25,7 +25,8 @@
 1. Beachten Sie die Ankündigungen im Moodle Forum. Dort werden die Termine zur Anmeldung als 2er Gruppe sowie die Freischaltung Ihrer Workstation bekannt gegeben. Beachten Sie bitte unbedingt die Deadlines dazu!
 1. Melden Sie sich beim Laborassistenten (Büro F029) zu den im Forum genannten Terminen zum Labor persönlich an. Sie bekommen für das Labor eine virtuelle 'Workstation' zugeteilt.
 1. Testen Sie Ihre Anmeldung im Laborraum. Melden Sie sich dazu mit Ihrer Kennung auf der zugeteilten Workstation an.
-1. Lesen Sie die HOWTOS unter [SYSLAB][]
+1. Lesen Sie die HOWTOS unter [SYSLAB][].
+1. Installieren Sie die Rust Toolchain inklusive **rustfmt** für jeden Benutzer auf Ihrer Workstation. Die Anleitung dazu finden Sie im entsprechenden HOWTO.
 
 
 # Aufgaben zum BSYS Labor
