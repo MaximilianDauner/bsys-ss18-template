@@ -33,14 +33,13 @@
 
 In diesem Ordner werden die Aufgaben (Homework,`hw`) veröffentlicht, die bearbeitet werden müssen, um den Schein in BSYS zu bekommen.
 
-Eine Homework besteht aus einer oder mehreren Tasks. Sie finden somit die zu einer Homework gehörenden Aufgaben in den `README.md`, Dateien der zughörigen `hwN/taskN/` Ordner. `N` steht als Platzhalter für die entsprechende Homework bzw. Tasknummer.
+Eine Homework besteht aus einer oder mehreren Tasks. Sie finden somit die zu einer Homework gehörenden Aufgaben in den `README.md`, Dateien der zugehörigen `hwN/taskN/` Ordner. `N` steht als Platzhalter für die entsprechende Homework bzw. Tasknummer.
 
 ## Vorbereitung
 Die folgenden Befehle demonstrieren den prinzipiellen technischen Ablauf um die Aufgaben vorzubereiten.
 Nach der Vorbereitung haben beide Gruppenmitglieder eine lokale Kopie des Git-Repositories.
 
 > Die Variable `N` wird im Folgenden verwendet um die Gruppennummer anzugeben.
-> In den Beispielbefehlen wird hierfür 99 verwendet, diese ist aber bei jeder Gruppe unterschiedlich!
 >
 > UserA und UserB beziehen sich jeweils auf die Gruppenmitglieder.
 > Wer UserA und UserB ist, ist nicht wichtig, darf aber während des gesamten Ablaufs nicht verändert werden!
