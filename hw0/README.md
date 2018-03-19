@@ -1,4 +1,12 @@
-# HW0  
+# HW0
+
+[TOC levels=2-3]: # "# Inhaltsangabe"
+
+# Inhaltsangabe
+- [Git Übung](#git-übung)
+    - [Vorbereitung](#vorbereitung)
+- [Rust Übung](#rust-übung)
+
 
 ## Git Übung
 In dieser Übung wird der Umgang mit `git` auf der Kommandozeile gelernt.
@@ -40,8 +48,16 @@ git push origin hw0-UserB
 
 ## Rust Übung
 
+In dieser Übung werden Sie zuerst Rust in Ihrem Container antesten und dann 4 [exercism.io][] Aufgaben in Rust lösen.
+
 1. Jeder Benutzer Ihrer Gruppe hat bereits über die Vorbereitung Rust im Container installiert.
-2. Testen Sie cargo, indem Sie
+
+1. Testen Sie cargo, indem Sie
     - über cargo new ein Binary HelloWorld Projekt erstellen
     - das Projekt compilieren und ausführen
-3. Lösen Sie mit Ihrer github ID nun die 1. Aufgabe von exercism.io.
+
+2. Lösen Sie mit Ihrer github ID nun die ersten 4 Aufgaben von [exercism.io][] in der Reihenfolge, wie [exercism.io][] Ihnen die Aufgaben präsentiert.
+
+3. Für Ihre Abgabe erhalten Sie in den nächsten Tagen eine Einladung. Sobald Sie diese akzeptiert haben, können die Tutoren auf Ihre [exercism.io][] Lösungen zugreifen.
+
+[exercism.io]: http://exercism.io
