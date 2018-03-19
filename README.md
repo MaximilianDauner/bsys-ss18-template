@@ -45,18 +45,18 @@ Nach der Vorbereitung haben beide Gruppenmitglieder eine lokale Kopie des Git-Re
 > UserA und UserB beziehen sich jeweils auf die Gruppenmitglieder.
 > Wer UserA und UserB ist, ist nicht wichtig, darf aber während des gesamten Ablaufs nicht verändert werden!
 
-### User A and User B @ Github:
-* Visit invitation link and join _grp$N_
+### User A und User B @ Github:
+* Auf den Link in der Einladung klicken, um der Gruppe _grp$N_ beizutreten.
 
-## Git and GitHub Preparations
+## Git und GitHub Vorbereitungen
 
 ### User A @ GitHub
 * *htwg-syslab-bsys-ss18/bsys-ss18-grp$N* -> fork -> *UserA/bsys-ss18-grp$N*
-* Add _UserB_ as collaborator to *UserA/bsys-ss18-grp$N*
+* _UserB_ als Mitarbeiter zum *UserA/bsys-ss18-grp$N*-Repository hinzufügen
 
 ### User A @ Container:
 
-Zunächst muss ein Verzeichnis angelegt werden in das das Git Repository geklont wird. Der Befehl `mkdir` erstellt ein neues, leeres Verzeichnis. Anschließend muss in das neu erstellte Verzeichnis gewechselt werden.
+Zunächst muss ein Verzeichnis angelegt werden, in das das Git Repository geklont wird. Der Befehl `mkdir` erstellt ein neues, leeres Verzeichnis. Anschließend muss in das neu erstellte Verzeichnis gewechselt werden.
 ```bash
 mkdir -p ~/src/htwg-syslab-bsys-ss18/
 cd ~/src/htwg-syslab-bsys-ss18/
@@ -81,7 +81,7 @@ git remote add upstream git@github.com:htwg-syslab-bsys-ss18/bsys-ss18-grpN.git
 
 ### User B @ Container:
 
-Selbes Vorgehen wie User A im vorherigen Abschnitt
+Selbes Vorgehen wie User A im vorherigen Abschnitt.
 
 # Abgabe der Homeworks
 
@@ -111,16 +111,16 @@ liegen. in den `simuN`-Unterordnern liegen Ihre Antworten zu den Simulationsaufg
 ## Schritte zum Pull-Request
 1. Überprüfen Sie den Inhalt Ihres Repository. Achten Sie darauf, dass alle Dateien und die jeweiligen Versionen der Dateien die Sie abgeben wollen nicht nur lokal in Ihrem Home Verzeichnis liegen sondern auch in Ihrem Repository auf github.
 1. Überprüfen Sie die Ausgabe Ihrer Programme. Stimmen die Ausgaben mit den geforderten Ausgaben überein?
-1. Lassen Sie alle Tests laufen indem Sie im Wurzelverzeichnes des Repositories folgenden Befehl ausführen (nur Linux und Verwandte!):
+1. Lassen Sie alle Tests laufen indem Sie im Wurzelverzeichnis des Repositories folgenden Befehl ausführen (nur Linux und Verwandte!):
 
    ```
    ./ci/run-all.sh
    ```
 
 1. Sobald Sie alle Aufgaben bearbeitet haben, und zur Bewertung die Aufgabe abgeben wollen, erstellen Sie einen Branch für den Pull-Request.
-2. Wählen Sie dann auf github diesen Branch aus und erstellen Sie einen Pull-Reqeust auf diesen Branch. Bitte weisen Sie selbst keinen Reviewer Ihren Pull-Request zu. Adressieren Sie auch keinen Tutor in dem Kommentarfeld. Die Tutoren wählen selbst und eigenständig die PR's aus, welche sie auswerten.
-3. Bei Ihrem Pull-Request laufen automatische Tests durch, die Ihr Programm testen. Dies sind nicht alle Tests von `ci/run-all.sh`, daher MÜSSEN Sie unbedingt selbst im lokalen Verzeichnis auf Ihrer Workstation den `ci/run-all.sh` Test ausführen!
-4. Falls Ihnen ein Fehler unterlaufen ist, so können Sie auch nach dem Pull-Request noch Änderungen am Code vornehmen. Das sollte jedoch der Ausnahmefall bleiben. Überprüfen Sie daher VOR Ihrem Pull-Request, ob die nötigen Aufgaben bearbeitet wurden und ob die Tests alle durchlaufen.
+1. Wählen Sie dann auf github diesen Branch aus und erstellen Sie einen Pull-Request auf diesen Branch. Bitte weisen Sie selbst keinen Reviewer Ihren Pull-Request zu. Adressieren Sie auch keinen Tutor in dem Kommentarfeld. Die Tutoren wählen selbst und eigenständig die PR's aus, welche sie auswerten.
+1. Bei Ihrem Pull-Request laufen automatische Tests durch, die Ihr Programm testen. Dies sind nicht alle Tests von `ci/run-all.sh`, daher MÜSSEN Sie unbedingt selbst im lokalen Verzeichnis auf Ihrer Workstation den `ci/run-all.sh` Test ausführen!
+1. Falls Ihnen ein Fehler unterlaufen ist, so können Sie auch nach dem Pull-Request noch Änderungen am Code vornehmen. Das sollte jedoch der Ausnahmefall bleiben. Überprüfen Sie daher VOR Ihrem Pull-Request, ob die nötigen Aufgaben bearbeitet wurden und ob die Tests alle durchlaufen.
 
 
 ## Travis-CI
@@ -128,15 +128,13 @@ liegen. in den `simuN`-Unterordnern liegen Ihre Antworten zu den Simulationsaufg
 Um das Arbeiten zu erleichtern, ist für alle Lösungsrepositories ein Continuous
 Integration Service aufgesetzt worden. Jedes mal, wenn ein Pull Request (PR) erstellt oder aktualisiert wird, laufen eine Reihe von Tests für Ihre Programmieraufgaben durch, die den Codestil prüfen, alle Rust Dateien kompilieren und alle Unit-Tests ausführen.
 
-Jeder PR hat also einen Status: *passed*, *failed* oder *pending*. Ihre PR zum
-Einreichen (Deadline) der Aufgaben muss den Status *passed* erreicht
-haben, also planen Sie genug Zeit zum Verbessern von kleinen Fehlern ein und erstellen den PR nicht erst kurz vor der Deadline. Zur Verbesserung fügen Sie einfach weitere Commits zu der Branch hinzu von der aus der Pull-Request erstellt wurde. Dieser wird auf GitHub dann automatisch aktualisiert.
+Jeder PR hat also einen Status: *passed*, *failed* oder *pending*. Ihr PR zum Einreichen (Deadline) der Aufgaben muss den Status *passed* erreicht haben, also planen Sie genug Zeit zum Verbessern von kleinen Fehlern ein und erstellen Sie den PR nicht erst kurz vor der Deadline. Zur Verbesserung fügen Sie einfach weitere Commits zu dem Branch hinzu von dem aus der Pull-Request erstellt wurde. Dieser wird auf GitHub dann automatisch aktualisiert.
 
 >Achtung: Damit das Testen in github nicht zu lange dauert, sind einige sehr lang laufende CI Tests deaktiviert. Bitte aktivieren Sie diese Tests NICHT für travis sondern führen Sie die Tests nur lokal aus. Github Classroom erlaubt nur immer eine laufende Instanz der Travis Tests. Erstellen Sie somit Ihren Pull-Request rechtzeitig, da ansonsten die Deadline aufgrund anderer laufender CI Tests von Ihnen u.U. nicht eingehalten werden kann.
 
 ## gitignore
 
-Ebenfalls in Ihrem Repository ist bereits eine `.gitignore` Datei im Root Ordner, die nicht geändert werden darf. Damit werden von git gewisse Dateitypen und Directories in Ihren `hwN/` Verzeichnisse ignoriert, so dass Sie diese nicht Ihrem Repository hinzufügen. Achten Sie dennoch drauf, welche Dateien Sie in Ihr Repository hinzufügen, denn in `.gitignore` sind nicht alle Möglichkeiten abgefangen. Fügen Sie mit **git add** immer nur selektiv Dateien hinzu.
+Ebenfalls in Ihrem Repository ist bereits eine `.gitignore` Datei im Root Ordner, die nicht geändert werden darf. Damit werden von git gewisse Dateitypen und Directories in Ihren `hwN/` Verzeichnissen ignoriert, so dass Sie diese nicht Ihrem Repository hinzufügen. Achten Sie dennoch drauf, welche Dateien Sie in Ihr Repository hinzufügen, denn in `.gitignore` sind nicht alle Möglichkeiten abgefangen. Fügen Sie mit **git add** immer nur selektiv Dateien zu Ihrer `Staging Area` hinzu.
 
 Sie können unabhängig davon in jedem Unterverzeichnis ein eigenes `.gitignore` führen.
 
@@ -149,7 +147,7 @@ Viele Texte, die Sie in diesem Labor anfertigen, müssen in der Markdown Syntax 
 
 Alle Kommunikationsarten über github erlauben die Markdown-Sprache. Bitte nutzen Sie diese entsprechend!
 
-### template-answers.md 
+### template-answers.md
 
 Diese Datei soll Ihnen als Vorlage für Ihre Antworten zu den Fragen der Simulationsaufgaben dienen. Achten Sie bitte darauf, die vorgegeben Struktur einzuhalten. Bitte kopieren Sie NICHT die Fragen selbst mit in die Antwortdatei!
 
