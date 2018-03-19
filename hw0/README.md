@@ -9,7 +9,7 @@
 
 
 ## Git Übung
-In dieser Übung wird der Umgang mit `git` auf der Kommandozeile gelernt.
+In der Übung, die Sie im Verzeichnis `gittask0/ finden, wird der Umgang mit **git** auf der Kommandozeile gelernt. Bevor Sie die Übung durchführen sind einige Vorbereitungsschritte nötig.
 
 ### Vorbereitung
 Updates des Templates herunterladen und neue Feature-Branches für jeden Benutzer erstellen.
@@ -56,7 +56,7 @@ In dieser Übung werden Sie zuerst Rust in Ihrem Container antesten und dann 4 [
     - über cargo new ein Binary HelloWorld Projekt erstellen
     - das Projekt compilieren und ausführen
 
-2. Lösen Sie mit Ihrer github ID nun die ersten 4 Aufgaben von [exercism.io][] in der Reihenfolge, wie [exercism.io][] Ihnen die Aufgaben präsentiert.
+2. Lösen Sie mit Ihrer github ID nun die ersten 4 Aufgaben von [exercism.io][] in der Reihenfolge, wie [exercism.io][] Ihnen die Aufgaben präsentiert. Laden Sie Ihre Lösungen in [exercism.io][] hoch.
 
 3. Für Ihre Abgabe erhalten Sie in den nächsten Tagen eine Einladung. Sobald Sie diese akzeptiert haben, können die Tutoren auf Ihre [exercism.io][] Lösungen zugreifen.
 
