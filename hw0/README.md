@@ -9,7 +9,7 @@
 
 
 ## Git Übung
-In der Übung, die Sie im Verzeichnis `gittask0/ finden, wird der Umgang mit **git** auf der Kommandozeile gelernt. Bevor Sie die Übung durchführen sind einige Vorbereitungsschritte nötig.
+In der Übung, die Sie im Verzeichnis `gittask0/` finden, wird der Umgang mit **git** auf der Kommandozeile gelernt. Bevor Sie die Übung durchführen sind einige Vorbereitungsschritte nötig.
 
 ### Vorbereitung
 Updates des Templates herunterladen und neue Feature-Branches für jeden Benutzer erstellen.
@@ -40,7 +40,7 @@ git checkout origin/hw0
 git checkout -b hw0
 ```
 
-Zweige von *hw0* ab nach *hw0-UserB* und push nach auf den Fork von UserA (origin)
+Zweige von *hw0* ab nach *hw0-UserB* und push auf den Fork von UserA (origin)
 ```bash
 git checkout -b hw0-UserB
 git push origin hw0-UserB
