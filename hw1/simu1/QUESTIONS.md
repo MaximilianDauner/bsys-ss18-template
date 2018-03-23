@@ -35,7 +35,7 @@ Please answer the questions, by giving the result and an **explanation**, why yo
 6. One  important behavior is what to do when an I/O completes. With `-I IO_RUN_LATER`, when an I/O completes, the process that issued it is not necessarily run right away; rather, whatever was running at the time keeps running. What happens when you run this combination of processes?
 
     ```text
-   ./process-run.py -l 3:0,5:100,5:100,5:100 -S SWITCH_ON_IO -I IO_RUN_LATER -c -p
+   ./process-run.py -l 4:0,3:100,4:100,6:100 -L 4 -S SWITCH_ON_IO -I IO_RUN_LATER -c -p
     ```
 
    Are system resources being effectively utilized?
