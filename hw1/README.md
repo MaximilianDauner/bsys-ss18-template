@@ -3,9 +3,14 @@
 ## Tasks
 To fullfill **hw1** you have to solve:
 - simu1
+- exercism
 
 ## Files
 You find already files for the simulation.
+
+## Rust
+
+Solve the next 4 tasks (5..8) on [exercism.io][] in the order provided by them. Publish your solutions on [exercism.io][].
 
 ## ASIDE: SIMULATION HOMEWORKS
 
@@ -16,7 +21,7 @@ The README provided with each simulator gives more detail as to how to run it. E
 
 You find all Files for your simulation homework in the `simuN/` directory.
 
-## Pull-Reuest
+## Pull-Request
 
 If you are ready with the homework, all tests run, please create a pull request named **hw1**.
 
@@ -29,3 +34,5 @@ If you are ready with the homework, all tests run, please create a pull request 
 | simu1 | 2 | |
 | Deadline | +0.5 | |
 | = | 2.5 | |
+
+[exercism.io]: http://exercism.io
