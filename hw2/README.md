@@ -1,7 +1,7 @@
 # hw1
 
 ## Tasks
-To fullfill **hw1** you have to solve:
+To fullfill **hw2** you have to solve:
 - simu1
 - simu2
 - exercism
@@ -28,7 +28,7 @@ If you are ready with the homework, all tests run, please create a pull request 
 
 ## Gradings
 
-### hw1
+### hw2
 
 | Task | max. Credits | Comment |
 |---|---|---|
