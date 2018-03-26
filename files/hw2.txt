@@ -1,0 +1,8 @@
+./hw2/README.md
+./hw2/simu1/ANSWERS.md
+./hw2/simu1/QUESTIONS.md
+./hw2/simu1/null.c
+./hw2/simu2/QUESTIONS.md
+./hw2/simu2/README-relocation.md
+./hw2/simu2/relocation.py
+./hw2/simu2/ANSWERS.md
