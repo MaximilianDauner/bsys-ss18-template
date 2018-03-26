@@ -103,7 +103,7 @@ Time     PID: 0        CPU        IOs
   5     RUN:cpu          1
 ````
 
-This result is not too interesting: the process is simple in the **RUN** state and then finishes, using the CPU the whole time and thus keeping the CPU busy the entire run, and not doing any I/Os.
+This result is not too interesting: the process is simply in the **RUN** state and then finishes, using the CPU the whole time and thus keeping the CPU busy the entire run, and not doing any I/Os.
 
 Let's make it slightly more complex by running two processes:
 
@@ -126,7 +126,7 @@ Process 1
 
 
 Important behaviors:
-  Scheduler will switch when the current process is FINISHED or ISSUES AN IO
+  System will switch when the current process is FINISHED or ISSUES AN IO
   After IOs, the process issuing the IO will run LATER (when it is its turn)
 ```
 
@@ -154,7 +154,7 @@ finished, it moves to the DONE state, while 1 runs. When 1 finishes, the trace
 is done.
 
 Let's look at one more example before getting to some questions. In this
-example, the process just issues I/O requests. We specify here tht I/Os take 5
+example, the process just issues I/O requests. We specify here that I/Os take 5
 time units to complete with the flag -L.
 
 ```text
@@ -198,7 +198,7 @@ the process moves to a WAITING state, and while the device is busy servicing
 the I/O, the CPU is idle.
 
 Let's print some stats (run the same command as above, but with the `-p flag)
-to see some overall behaviors:
+to see some overall behaviour:
 
 ```text
 ...
@@ -216,7 +216,7 @@ There are a few other important flags:
 
 * `-s SEED, --seed=SEED`  the random seed
 
- this gives you way to create a bunch of different jobs randomly
+  this gives you a way to create a bunch of different jobs randomly
 
 * `-L IO_LENGTH, --iolength=IO_LENGTH`
 
@@ -233,4 +233,4 @@ There are a few other important flags:
   this determines when a process runs after it issues an IO:
     -  `IO_RUN_IMMEDIATE`: switch to this process right now
     -  `IO_RUN_LATER`: switch to this process when it is natural to
-      (e.g., depending on process-switching behavior)
+      (e.g., depending on process-switching behaviour of the system)
