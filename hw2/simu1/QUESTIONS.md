@@ -19,20 +19,6 @@ got the result.  Write your answers in markdown syntax in the new file
 `ANSWERS.md`. Also checkin your C-Files and one Makefile for all or your
 C-Files, so that all binaries are build. Do NOT checkin the binaries!
 
-The installed gcc wrapper on you workstations does some optimization to your code
-examples, which will not show some of the bugs with an "Segmentation fault". We
-have already disabled this behavior by setting:
-
-```text
-export hardeningDisable=all
-```
-
-in your labshell bsys environment. So, you don't have to do any further steps to
-produce unoptimized code with gcc, if you want to.
-
-If you struggle with your own systems about some strange gcc optimization
-behavior, maybe it helps to check for gcc-wrapper variables like these.
-
 ## Questions
 
 1. First, write a simple program called `null.c` that creates a pointer to an
