@@ -34,22 +34,22 @@ the new file `ANSWERS.md.` Please use the *template_answers.md* as a template fo
    ```text
    ARG phys mem size 16k
 
-Base-and-Bounds register information:
+   Base-and-Bounds register information:
 
-  Base   : 0x00001a25 (decimal 6693)
-  Limit  : 512
+   Base   : 0x00001a25 (decimal 6693)
+   Limit  : 512
 
-Virtual Address Trace
-  VA  0: 0x0000022a (decimal:  554) --> PA or segmentation violation?
-  VA  1: 0x00000372 (decimal:  882) --> PA or segmentation violation?
-  VA  2: 0x000000b4 (decimal:  180) --> PA or segmentation violation?
-  VA  3: 0x000000e6 (decimal:  230) --> PA or segmentation violation?
-  VA  4: 0x0000001d (decimal:   29) --> PA or segmentation violation?
-  VA  5: 0x00000077 (decimal:  119) --> PA or segmentation violation?
-  VA  6: 0x00000009 (decimal:    9) --> PA or segmentation violation?
-  VA  7: 0x000000a0 (decimal:  160) --> PA or segmentation violation?
-  VA  8: 0x0000020e (decimal:  526) --> PA or segmentation violation?
-  VA  9: 0x000003f5 (decimal: 1013) --> PA or segmentation violation?
-    ```
+   Virtual Address Trace
+   VA  0: 0x0000022a (decimal:  554) --> PA or segmentation violation?
+   VA  1: 0x00000372 (decimal:  882) --> PA or segmentation violation?
+   VA  2: 0x000000b4 (decimal:  180) --> PA or segmentation violation?
+   VA  3: 0x000000e6 (decimal:  230) --> PA or segmentation violation?
+   VA  4: 0x0000001d (decimal:   29) --> PA or segmentation violation?
+   VA  5: 0x00000077 (decimal:  119) --> PA or segmentation violation?
+   VA  6: 0x00000009 (decimal:    9) --> PA or segmentation violation?
+   VA  7: 0x000000a0 (decimal:  160) --> PA or segmentation violation?
+   VA  8: 0x0000020e (decimal:  526) --> PA or segmentation violation?
+   VA  9: 0x000003f5 (decimal: 1013) --> PA or segmentation violation?
+   ```
 
 [markdown syntax]: https://guides.github.com/features/mastering-markdown/
