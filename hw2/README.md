@@ -1,4 +1,4 @@
-# hw1
+# hw2
 
 ## Tasks
 To fullfill **hw2** you have to solve:
