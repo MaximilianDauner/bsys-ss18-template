@@ -22,10 +22,10 @@ C-Files, so that all binaries are build. Do NOT checkin the binaries!
 ## Questions
 1. First, answer the following questions using this code sequence:
    ```c
-   int x; 
+   int x;
 
-   int main() { 
-     int y; 
+   int main() {
+     int y;
      int *z = malloc(sizeof(int));
    }
    ```
