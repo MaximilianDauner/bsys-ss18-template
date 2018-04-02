@@ -2,6 +2,10 @@
 ./hw2/simu1/ANSWERS.md
 ./hw2/simu1/QUESTIONS.md
 ./hw2/simu1/null.c
+./hw2/simu1/forgetfree.c
+./hw2/simu1/allocatevalues.c
+./hw2/simu1/printvalues.c
+./hw2/simu1/funnyfree.c
 ./hw2/simu2/QUESTIONS.md
 ./hw2/simu2/README-relocation.md
 ./hw2/simu2/relocation.py

@@ -36,23 +36,24 @@ C-Files, so that all binaries are build. Do NOT checkin the binaries!
    following: `valgrind --leak-check=yes ./null`. What happens when you run
    this? Can you interpret the output from the tool?
 
-1. Write a simple program that allocates memory using `malloc()` but forgets to
-   free it before exiting. What happens when this program runs? Can you use
-   `gdb` to find any problems with it? How about `valgrind` (again with the
-   `--leak-check=yes` flag)?
+1. Write a simple program called `forgetfree.c` that allocates memory using
+   `malloc()` but forgets to free it before exiting. What happens when this
+   program runs? Can you use `gdb` to find any problems with it? How about
+   `valgrind` (again with the `--leak-check=yes` flag)?
 
-1. Write a program that creates an array of integers of size 100 using
-   `malloc()`; then, set `data[100]` to zero. What happens when you run this
-   program? What happens when you run this program using `valgrind`? Is the
-   program correct?
+1. Write a program called `allocatevalues.c` that creates an array of integers
+   of size 100 using `malloc()`; then, set `data[100]` to zero. What happens
+   when you run this program? What happens when you run this program using
+   `valgrind`? Is the program correct?
 
-1. Create a program that allocates an array of integers (as above),frees them,
-   and then tries to print the value of one of the elements of the array. Does
-   the program run? What happens when you use `valgrind` on it?
+1. Create a program called `printvalues.c` that allocates an array of integers
+   (as above),frees them, and then tries to print the value of one of the
+   elements of the array. Does the program run? What happens when you use
+   `valgrind` on it?
 
-1. Now pass a funny value to free (e.g., a pointer in the middle of the array
-   you allocated above). What happens? Do you need tools to find this type of
-   problem?
+1. Create a program called `funnyfree.c` that passes a funny value to free (e.g.
+   a pointer in the middle of the array you allocated above). What happens? Do
+   you need tools to find this type of problem?
 
 [valgrind]: http://valgrind.org/downloads/current.html
 [quick reference gdb]: https://web.stanford.edu/class/cs107/gdb_refcard.pdf
