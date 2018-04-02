@@ -21,22 +21,22 @@ C-Files, so that all binaries are build. Do NOT checkin the binaries!
 
 ## Questions
 1. Answer the following questions using this code sequence:
-  ```c
-  int x; 
+   ```c
+   int x; 
 
-  int main() { 
+   int main() { 
      int y; 
      int *z = malloc(sizeof(int));
-  }
-  ```
-  Where is at runtime
-  
-  1. x
-  2. y
-  3. z
-  4. int main()
+   }
+   ```
+   Where is at runtime
 
-  located in the storage (Heap, Stack, Data segment...)?
+   1. x
+   2. y
+   3. z
+   4. int main()
+
+   located in the storage (Heap, Stack, Data segment...)?
 
 1. First, write a simple program called `null.c` that creates a pointer to an
    integer, sets it to `NULL`, and then tries to dereference it. Compile this
