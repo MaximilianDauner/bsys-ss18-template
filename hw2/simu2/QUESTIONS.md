@@ -19,14 +19,14 @@ the new file `ANSWERS.md.` Please use the *template_answers.md* as a template fo
    bounds register) to in order to ensure that all the generated virtual
    addresses are within bounds?
 
-1. Run with these flags: `-s 7 -n 10 -l 200`. What is the maximum value that
+2. Run with these flags: `-s 7 -n 10 -l 200`. What is the maximum value that
    base can be set to, such that the address space still fits into physical
    memory in its entirety (explanation)?
 
-1. Run some of the same problems above, but with larger address spaces (-a) and
+3. Run some of the same problems above, but with larger address spaces (-a) and
    physical memories (-p). How does increasing effect the results (explanation)?
 
-1. For each virtual address, either write down the physical address it
+4. For each virtual address, either write down the physical address it
    translates to OR write down that it is an out-of-bounds address (a
    segmentation violation). For this problem, you should assume a simple virtual
    address space of a given size.
@@ -50,6 +50,16 @@ the new file `ANSWERS.md.` Please use the *template_answers.md* as a template fo
    VA  7: 0x000000a0 (decimal:  160) --> PA or segmentation violation?
    VA  8: 0x0000020e (decimal:  526) --> PA or segmentation violation?
    VA  9: 0x000003f5 (decimal: 1013) --> PA or segmentation violation?
+   ```
+
+5. Which base register and bounds register have to be set to achieve the following trace?
+
+   ```text
+   Virtual Address -> Physical Address
+          0                1000                Base?   _________
+        100                1100
+       1999                2999                Bounds? _________
+       2000                [fault]
    ```
 
 [markdown syntax]: https://guides.github.com/features/mastering-markdown/
