@@ -120,7 +120,7 @@ the addresses?
     ```text
     Virtual Address Trace
     VA  0: 0x00000049 (decimal: 73)  --> PA?
-    VA  1: 0x00000043 (decimal: 51)  --> PA?
+    VA  1: 0x00000051 (decimal: 81)  --> PA?
     VA  2: 0x0000007E (decimal: 107) --> PA?
     VA  3: 0x0000007B (decimal: 123) --> PA?
     ```
