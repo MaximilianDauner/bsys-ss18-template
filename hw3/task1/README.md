@@ -45,6 +45,14 @@ Ziele:
 - Weitere String-Funktionen kennen lernen
 - Fehlerbehandlung
 
+Bisher haben Sie für die Aufgaben in [exercism.io]() jeweils eine Bibliothek erstellt.
+In dieser Aufgabe werden Sie ein Binary und eine Bibliothek (Lib) zusammen
+in einem Crate erstellen. Dazu entwicklen Sie eine *main.rs* und eine *lib.rs*
+gemeinsam im *src/* Verzeichnis. Über eine Einstellung in der *Cargo.toml* muss
+für so ein Projekt explizit ausgewählt werden, ob die Doku zur Binary oder
+Lib erstellt werden soll (siehe auch [Dokumentation](#dokumentation)).
+
+
 ## Vorbereitung
 
 Erstellen Sie im `task1/` Ordner mittels cargo ein Binary Projekt.
@@ -222,8 +230,6 @@ wurde.
 
 ### Zeichen im String suchen
 
-In Ihrer vorherigen Homework haben Sie bereits eine ähnliche Funktionalität
-implementiert, die Sie nun in der *run()* Funktion übernehmen können.
 
 ### Ablauf des Programms
 
@@ -284,6 +290,7 @@ Die Test sind ausgelagert in die Datei `tests/task1.rs`. Der Aufruf von cargo
 test sucht nach Unit Tests in der `src/main.rs` und im Verzeichnis `tests/`. Die
 Tests in `tests/task1.rs` funktionieren erst, wenn eine `src/lib.rs` existiert
 (siehe Aufgabenstellung [Restructuring](#restructuring) oben).
+
 
 ### Dokumentation
 
