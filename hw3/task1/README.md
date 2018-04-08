@@ -47,7 +47,7 @@ Ziele:
 
 ## Vorbereitung
 
-Erstellen Sie im `task2/` Ordner mittels cargo ein Binary Projekt.
+Erstellen Sie im `task1/` Ordner mittels cargo ein Binary Projekt.
 
 ## Struktur
 
@@ -262,8 +262,8 @@ Anweisungen in `main.rs`, erreichbar machen. Ergänzen Sie dazu in der
 `src/main.rs`:
 
 ```Rust
-extern crate task2;
-use task2::Config;
+extern crate task1;
+use task1::Config;
 ```
 
 Alle *use* Anweisungen stehen in der `main.rs`. Es müssen keine weiteren *use*
@@ -280,9 +280,9 @@ geeignet in Ihrer *main()* Funktion.
 
 ### Tests
 
-Die Test sind ausgelagert in die Datei `tests/task2.rs`. Der Aufruf von cargo
+Die Test sind ausgelagert in die Datei `tests/task1.rs`. Der Aufruf von cargo
 test sucht nach Unit Tests in der `src/main.rs` und im Verzeichnis `tests/`. Die
-Tests in `tests/task2.rs` funktionieren erst, wenn eine `src/lib.rs` existiert
+Tests in `tests/task1.rs` funktionieren erst, wenn eine `src/lib.rs` existiert
 (siehe Aufgabenstellung [Restructuring](#restructuring) oben).
 
 ### Dokumentation
@@ -304,7 +304,7 @@ benötigen Sie folgende Erweiterung in Ihrer `Cargo.toml` Datei.
 ```text
 [[bin]]
 doc = false
-name = "task2"
+name = "task1"
 ```
 
 Damit weiß cargo, dass es die Dokumentation aus `lib.rs` erstellen soll und
