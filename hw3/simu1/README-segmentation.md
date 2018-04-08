@@ -38,10 +38,10 @@ segment-1 base tells where the *bottom* of segment 1 has been placed in physical
 memory and the corresponding limit also tells us how big the segment is (or how
 far it grows in the negative direction).
 
-As in `relocation (simu1)`, there are two steps to running the program to test
-out your understanding of segmentation. First, run without the "-c" flag to
+As in `relocation (hw2/simu2)`, there are two steps to running the program to test
+out your understanding of segmentation. First, run without the `-c` flag to
 generate a set of translations and see if you can correctly perform the address
-translations yourself. Then, when done, run with the "-c" flag to check your
+translations yourself. Then, when done, run with the `-c` flag to check your
 answers.
 
 For example, to run with the default flags, type:
@@ -91,7 +91,7 @@ You should see this:
 ```
 
 Then, after you have computed the translations in the virtual address trace, run
-the program again with the "-c" flag. You will see the following (not including
+the program again with the `-c` flag. You will see the following (not including
 the redundant information):
 
 ```text
@@ -103,12 +103,12 @@ the redundant information):
     VA  4: 0x000001e8 (decimal:  488) --> SEGMENTATION VIOLATION (SEG0)
 ```
 
-As you can see, with -c, the program translates the addresses for you, and hence
+As you can see, with `-c`, the program translates the addresses for you, and hence
 you can check if you understand how a system using segmentation translates
 addresses.
 
 Of course, there are some parameters you can use to give yourself different
-problems. One particularly important parameter is the -s or -seed parameter,
+problems. One particularly important parameter is the `-s` or `--seed` parameter,
 which lets you generate different problems by passing in a different random
 seed. Of course, make sure to use the same random seed when you are generating a
 problem and then solving it.
@@ -143,7 +143,7 @@ which tells the program to generate virtual addresses for a 16-byte address
 space placed somewhere in a 32-byte physical memory. As you can see, the
 resulting virtual addresses are tiny (12, 8, 1, 7, and 0). As you can also see,
 the program picks tiny base register and limit values, as appropriate. Run with
--c to see the answers.
+`-c` to see the answers.
 
 This example should also show you exactly what each base pair means. For
 example, segment 0's base is set to a physical address of 24 (decimal) and is of
@@ -159,9 +159,9 @@ that they map to physical addresses 13, 14, 15, 16, and 17, respectively.
 If that doesn't make sense, read it again -- you will have to make sense of how
 this works in order to do any of these problems.
 
-Note you can specify bigger values by tacking a "k", "m", or even "g" onto the
-values you pass in with the -a or -p flags, as in "kilobytes", "megabytes", and
-"gigabytes". Thus, if you wanted to do some translations with a 1-MB address
+Note you can specify bigger values by tacking a `k`, `m`, or even `g` onto the
+values you pass in with the `-a` or `-p` flags, as in `kilobytes`, `megabytes`,
+and `gigabytes`. Thus, if you wanted to do some translations with a 1-MB address
 space set in a 32-MB physical memory, you might type:
 
 ```text
@@ -169,7 +169,7 @@ prompt> ./segmentation.py -a 1m -p 32m
 ```
 
 If you want to get even more specific, you can set the base register and limit
-register values yourself, with the --b0, --l0, --b1, and --l1 registers. Try
+register values yourself, with the `--b0`, `--l0`, `--b1`, and `--l1` registers. Try
 them and see.
 
 Finally, you can always run

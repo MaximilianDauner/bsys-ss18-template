@@ -5,7 +5,8 @@ In this homework, you will use a simple program, which is known as
 virtual-to-physical address translation works with linear page tables. To run
 the program, remember to either type just the name of the program
 (`./paging-linear-translate.py`) or possibly this (`python
-paging-linear-translate.py`). When you run it with the -h (help) flag, you see:
+paging-linear-translate.py`). When you run it with the `-h` (help) flag, you
+see:
 
 ```text
 Usage: paging-linear-translate.py [options]
@@ -75,9 +76,9 @@ valid.
 
 Because the page table is a linear array, what is printed above is a replica of
 what you would see in memory if you looked at the bits yourself. However, it is
-sometimes easier to use this simulator if you run with the verbose flag (-v);
+sometimes easier to use this simulator if you run with the verbose flag (`-v`);
 this flag also prints out the VPN (index) into the page table. From the example
-above, run with the -v flag:
+above, run with the `-v` flag:
 
 ```text
 Page Table (from entry 0 down to the max size)
@@ -108,7 +109,7 @@ yielding the final physical address: 0x6229. Thus, we can see that virtual
 address 0x3229 translates to physical address 0x6229 in this example.
 
 To see the rest of the solutions (after you have computed them yourself!), just
-run with the -c flag (as always):
+run with the `-c` flag (as always):
 
 ```text
 ...
@@ -120,16 +121,5 @@ VA  4: 00003a1e (decimal: 14878) --> 00006a1e (27166) [VPN 3]
 ```
 
 Of course, you can change many of these parameters to make more interesting
-problems. Run the program with the -h flag to see what options there are:
-
-- The -s flag changes the random seed and thus generates different page table
-  values as well as different virtual addresses to translate.
-- The -a flag changes the size of the address space.
-- The -p flag changes the size of physical memory.
-- The -P flag changes the size of a page.
-- The -n flag can be used to generate more addresses to translate (instead of
-  the default 5).
-- The -u flag changes the fraction of mappings that are valid, from 0% (-u 0) up
-  to 100% (-u 100). The default is 50, which means that roughly 1/2 of the pages
-  in the virtual address space will be valid.
-- The -v flag prints out the VPN numbers to make your life easier.
+problems. Run the program with the `-h` flag or scroll up to see what options
+are available.
