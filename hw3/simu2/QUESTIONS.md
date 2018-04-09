@@ -22,20 +22,32 @@ about the free list over time?
 3. For the above questions, how the list is kept ordered can affect the time it
    takes to find a free location for some of the policies. Use the different
    free list orderings (`-l ADDRSORT, -l SIZESORT+, -l SIZESORT-`) to see how
-   the policies and the list orderings interact. What are your observations?
+   the policies and the list orderings interact. Compare each ordering option with each of the different policies. What are your observations?
 
 4. Coalescing of a free list can be quite important. Increase the number of
-   random allocations (say to `-n 1000`). What happens to larger allocation
-   requests over time? Run with and without coalescing (i.e., without and with
+   random allocations (say to `-n 1000`). What happens to larger allocation requests over time?
+
+   1. Run with and without coalescing (i.e., without and with
    the `-C` flag). What differences in outcome do you see? How big is the free
-   list over time in each case? Does the ordering of the list matter in this
-   case? Comment your results!
+   list over time in each case?
+
+   2. Does the ordering of the list matter in this
+   case?
+
+   Comment your results!
 
 5. What happens when you change the percent allocated fraction `-P` to higher
-   than 50? What happens to allocations as it nears 100? What about as it nears
-   0? Please give an explanation to your observations.
+   than 50?
+
+   1. What happens to allocations as it nears 100?
+
+   2. What about as it nears 0?
+
+   Please give an explanation to your observations.
 
 6. What kind of specific requests can you make to generate a highly-fragmented
    free space? Use the `-A` flag to create fragmented free lists, and see how
    different policies and options change the organization of the free list.
    Explain your results.
+
+7. Now, assume we have the following free list ordered by address (increasing): 10KB, 4KB, 20KB, 18 KB, 7KB, 9KB, 12KB und 15KB. Which of the free chunks would each policy (BEST, WORST, FIRST) choose when successively allocating 12 KB, 10 KB and 9 KB?
