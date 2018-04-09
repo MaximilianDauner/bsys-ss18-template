@@ -57,8 +57,8 @@ README for details.
    quite crazy) address-space parameters, for variety:
 
    ```text
-      paging-linear-translate.py -P 16  -a 64   -p 2048 -v -s 1
-      paging-linear-translate.py -P 16k -a 64k  -p 2m   -v -s 2
+      paging-linear-translate.py -P 16  -a 64  -p 2048 -v -s 1
+      paging-linear-translate.py -P 16k -a 64k -p 2m   -v -s 2
       paging-linear-translate.py -P 1m -a 256m -p 512m -v -s 3
    ```
 
