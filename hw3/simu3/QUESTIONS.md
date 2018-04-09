@@ -17,17 +17,17 @@ README for details.
    grows:
 
    ```text
-      ./paging-linear-translate.py -P 1k -a 1m -p 512m -v -n 0
-      ./paging-linear-translate.py -P 1k -a 2m -p 512m -v -n 0
-      ./paging-linear-translate.py -P 1k -a 4m -p 512m -v -n 0
+      paging-linear-translate.py -P 1k -a 1m -p 256m -v -n 0
+      paging-linear-translate.py -P 1k -a 2m -p 256m -v -n 0
+      paging-linear-translate.py -P 1k -a 4m -p 256m -v -n 0
    ```
 
    Then, to understand how linear page table size changes as page size grows:
 
    ```text
-      ./paging-linear-translate.py -P 1k -a 1m -p 512m -v -n 0
-      ./paging-linear-translate.py -P 2k -a 1m -p 512m -v -n 0
-      ./paging-linear-translate.py -P 4k -a 1m -p 512m -v -n 0
+      paging-linear-translate.py -P 1k -a 1m -p 256m -v -n 0
+      paging-linear-translate.py -P 2k -a 1m -p 256m -v -n 0
+      paging-linear-translate.py -P 4k -a 1m -p 256m -v -n 0
    ```
 
    Before running any of these, try to think about the expected trends.
@@ -43,11 +43,11 @@ README for details.
    flag. For example:
 
    ```text
-      ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 0
-      ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 25
-      ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 50
-      ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 75
-      ./paging-linear-translate.py -P 1k -a 16k -p 32k -v -u 100
+      paging-linear-translate.py -P 4k -a 64k -p 128k -v -u 0
+      paging-linear-translate.py -P 4k -a 64k -p 128k -v -u 25
+      paging-linear-translate.py -P 4k -a 64k -p 128k -v -u 50
+      paging-linear-translate.py -P 4k -a 64k -p 128k -v -u 75
+      paging-linear-translate.py -P 4k -a 64k -p 128k -v -u 100
    ```
 
    What happens as you increase the percentage of pages that are allocated in
@@ -57,8 +57,8 @@ README for details.
    quite crazy) address-space parameters, for variety:
 
    ```text
-      paging-linear-translate.py -P 8  -a 32   -p 1024 -v -s 1
-      paging-linear-translate.py -P 8k -a 32k  -p 1m   -v -s 2
+      paging-linear-translate.py -P 16  -a 64   -p 2048 -v -s 1
+      paging-linear-translate.py -P 16k -a 64k  -p 2m   -v -s 2
       paging-linear-translate.py -P 1m -a 256m -p 512m -v -s 3
    ```
 
