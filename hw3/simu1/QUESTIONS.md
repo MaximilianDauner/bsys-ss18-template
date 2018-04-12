@@ -67,7 +67,7 @@ the addresses?
 
     ```text
     ARG address space size 512
-    ARG phys mem size 1024
+    ARG phys mem size 16k
 
     Segment register information:
 
