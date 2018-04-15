@@ -1,6 +1,6 @@
 # README Paging: Policy
 
-This simulator, paging-policy.py, allows you to play around with different
+This simulator, `paging-policy.py`, allows you to play around with different
 page-replacement policies. For example, let's examine how LRU performs with a
 series of page references with a cache of size 3:
 
@@ -13,7 +13,7 @@ To do so, run the simulator as follows:
 ```text
 prompt> ./paging-policy.py --addresses=0,1,2,0,1,3,0,3,1,2,1
                            --policy=LRU --cachesize=3 -c
-```text
+```
 
 And what you would see is:
 
@@ -74,18 +74,18 @@ Options:
 -c, --compute   compute answers for me
 ```
 
-As usual, "-c" is used to solve a particular problem, whereas without it, the
+As usual, `-c` is used to solve a particular problem, whereas without it, the
 accesses are just listed (and the program does not tell you whether or not a
 particular access is a hit or miss).
 
-To generate a random problem, instead of using "-a/--addresses" to pass in
-some page references, you can instead pass in "-n/--numaddrs" as the number of
-addresses the program should randomly generate, with "-s/--seed" used to
+To generate a random problem, instead of using `-a/--addresses` to pass in
+some page references, you can instead pass in `-n/--numaddrs` as the number of
+addresses the program should randomly generate, with `-s/--seed` used to
 specify a different random seed. For example:
 
 ```text
 prompt> ./paging-policy.py -s 10 -n 3
-.. .
+...
 
 Assuming a replacement policy of FIFO, and a cache of size 3 pages,
 figure out whether each of the following page references hit or miss
@@ -96,11 +96,11 @@ Access: 4  Hit/Miss?  State of Memory?
 Access: 5  Hit/Miss?  State of Memory?
 ```
 
-As you can see, in this example, we specify "-n 3" which means the program
+As you can see, in this example, we specify `-n 3` which means the program
 should generate 3 random page references, which it does: 5, 7, and 5. The
 random seed is also specified (10), which is what gets us those particular
 numbers. After working this out yourself, have the program solve the problem
-for you by passing in the same arguments but with "-c" (showing just the
+for you by passing in the same arguments but with `-c` (showing just the
 relevant part here):
 
 ```text
@@ -113,16 +113,16 @@ Access: 4 MISS FirstIn->[br 5, 4] <-Lastin Replace:- [br Hits:0 Misses:2]
 Access: 5 HIT  FirstIn->[br 5, 4] <-Lastin Replace:- [br Hits:1 Misses:2]
 ```
 
-The default policy is FIFO, though others are available, including LRU, MRU,
-OPT (the optimal replacement policy, which peeks into the future to see what
-is best to replace), UNOPT (which is the pessimal replacement), RAND (which
-does random replacement), and CLOCK (which does the clock algorithm). The
-CLOCK algorithm also takes another argument (-b), which states how many bits
+The default policy is `FIFO`, though others are available, including `LRU`, `MRU`,
+`OPT` (the optimal replacement policy, which peeks into the future to see what
+is best to replace), `UNOPT` (which is the pessimal replacement), `RAND` (which
+does random replacement), and `CLOCK` (which does the clock algorithm). The
+`CLOCK` algorithm also takes another argument (`-b`), which states how many bits
 should be kept per page; the more clock bits there are, the better the
 algorithm should be at determining which pages to keep in memory.
 
-Other options include: "-C/--cachesize" which changes the size of the page
-cache; "-m/--maxpage" which is the largest page number that will be used if
-the simulator is generating references for you; and "-f/--addressfile" which
+Other options include: `-C/--cachesize` which changes the size of the page
+cache; `-m/--maxpage` which is the largest page number that will be used if
+the simulator is generating references for you; and `-f/--addressfile` which
 lets you specify a file with addresses in them, in case you wish to get traces
 from a real application or otherwise use a long trace as input.
