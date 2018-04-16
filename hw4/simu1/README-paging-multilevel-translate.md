@@ -78,3 +78,7 @@ Some useful options:
   ```text
     -c, --solve                compute answers for me
   ```
+
+In order to better understand this homework you can watch the video, where one of the authors introduces the basic concept of how to use the simulator. This video can be found on the [Homework] web page.
+
+[Homework]: http://pages.cs.wisc.edu/~remzi/OSTEP/Homework/homework.html
