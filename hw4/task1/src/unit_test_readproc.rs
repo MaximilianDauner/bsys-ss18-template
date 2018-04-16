@@ -55,7 +55,7 @@ mod tests {
     #[test]
     #[should_panic]
     fn test9_get_task_total() {
-        assert_eq!(Ok((0)), get_task_total());
+        assert_eq!(Ok(0), get_task_total());
     }
 
 }
