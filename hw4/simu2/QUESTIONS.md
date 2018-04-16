@@ -15,8 +15,10 @@ Generate random addresses with the following arguments: -s 0 -n 10, -s 1 -n 10, 
 
 3. Now generate a trace with some locality.
     1. How can you generate such a trace?
-    1. How does LRU perform on it?
-    1. How much better than RAND is LRU?
-    1. How does CLOCK do? How about CLOCK with different numbers of clock bits?
+    2. How does LRU perform on it?
+    3. How much better than RAND is LRU?
+    4. How does CLOCK do? How about CLOCK with different numbers of clock bits?
 
-4. 
+4. Now, consider we have the following pages to access: 1,2,3,4,1,2,5,1,2,3,4,5. How does FIFO perform on the reference stream, first using a cache of size 3 and then of size 4?
+    1. How is that phenomenon called?
+    2. Which paging policy avoids it?
