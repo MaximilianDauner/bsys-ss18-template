@@ -1,4 +1,4 @@
-# Questions 20-paging-multilevel-translate
+# Questions Paging: Policy
 
 This simulator, `paging-policy.py`, allows you to play around with different page-replacement policies. See the README for details.
 
@@ -8,7 +8,7 @@ Generate random addresses with the following arguments: `-s 0 -n 10`, `-s 1 -n 1
 
 ## Questions
 
-1. For a cache of size 5, generate worst-case address reference streams for each of the following policies: `FIFO`, `LRU`, and `MRU` (worst-case reference streams cause the most misses possible. For the worst case reference streams, how much bigger of a cache is needed to improve performance dramatically and approach `OPT`?
+1. For a cache of size 5, generate worst-case address reference streams for each of the following policies: `FIFO`, `LRU`, and `MRU` (worst-case reference streams cause the most misses possible). For the worst-case reference streams, how much bigger of a cache is needed to improve performance dramatically and approach `OPT`?
 
 2. Generate a random trace (use python or c or rust (single file, no project).
     1. How would you expect the different policies to perform on such a trace?
@@ -18,3 +18,7 @@ Generate random addresses with the following arguments: `-s 0 -n 10`, `-s 1 -n 1
     2. How does `LRU` perform on it?
     3. How much better than `RAND` is `LRU`?
     4. How does `CLOCK` do? How about `CLOCK` with different numbers of clock bits?
+
+4. Now, consider we have the following pages to access: 1,2,3,4,1,2,5,1,2,3,4,5. How does `FIFO` perform on the reference stream, first using a cache of size 3 and then of size 4?
+    1. How is that phenomenon called?
+    2. Which paging policy avoids it?
